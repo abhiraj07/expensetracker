@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.balance div{
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f3e7e9;
+    text-align: center;
+}
+.balance .ti{
+    background: #118b08d5;
+}
+.balance .te{
+    background: #f42237d5;
+}
+
+
+
+.balance div span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.transaction-form {
+    margin-bottom: 20px;
+}
+
+.transaction-form input, .transaction-form select, .transaction-form button {
+    width: calc(30% - 12px);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.transaction-form button {
+    width: 98%;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.transaction-form button:hover {
+    background: #0056b3;
+}
+
+.history {
+    margin-top: 20px;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.history ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.income {
+    color: green;
+}
+
+.expense {
+    color: red;
+}
+
+.clear-button, .get-back-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: calc(50% - 12px);
+}
+
+.clear-button {
+    background-color: #dc3545;
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}
+
+.get-back-button {
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+}
+
+.get-back-button:hover {
+    background: linear-gradient(135deg, #45a049, #1976D2);
+}
